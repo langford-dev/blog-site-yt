@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  color: #000;
+}
+
+p {
+  line-height: 25px;
+  color: #676767;
+}
+
+.hero .back-button {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+/* hero */
+.hero {
+  background: #242424;
+  color: #fff;
+  padding: 60px 15px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero .profile {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 100px;
+}
+
+/* stories */
+.stories {
+  padding: 15px;
+}
+
+.stories ul {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+
+.story-card a {
+  color: #000;
+}
+
+.story-card .date {
+  margin: 15px 0;
+}
+
+.story-card .title {
+  font-size: 1.4rem;
+}
+
+.story-card:hover {
+  cursor: pointer;
+}
+
+.story-card:hover .title {
+  color: #0099ff;
+  text-decoration: underline;
+}
+
+.story-card .banner {
+  width: 100%;
+  margin-bottom: 20px;
+  height: 250px;
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+.story-card .description,
+.story-card .title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* footer */
+footer {
+  background: #fafafa;
+  border-top: 1px solid #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 15px;
+  margin-top: 50px;
+}
+
+footer input {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  border: 2px solid #f1f1f1;
+  margin-top: 20px;
+}
+
+footer .input-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+footer button {
+  background: #000;
+  border: 2px solid #000;
+  color: #fff;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: 0.2s linear;
+  white-space: nowrap;
+  margin-left: 10px;
+  margin-top: 18px;
+  border-radius: 5px;
+}
+
+footer button:hover {
+  background: #fff;
+  color: #000;
+}
+
+.stories-wrapper,
+.footer-wrapper,
+.blog-wrapper,
+.hero-wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.blog {
+  padding: 0 15px;
+}
+
+.blog-banner {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .story-card {
+    margin-bottom: 50px;
+  }
+
+  .stories ul {
+    display: block;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  footer button {
+    margin-left: 0;
+  }
+}
